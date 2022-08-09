@@ -25,5 +25,4 @@ function Contador() {
 
 }
 
-
 export default ContadorHome
