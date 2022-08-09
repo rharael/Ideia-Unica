@@ -3,7 +3,7 @@ async function tempo(request, response) {
     const dynamicDate = new Date();
 
     const subscribersResponse = await fetch(`https://api.convertkit.com/v3/subscribers?api_secret=${apiSecret}`)
-    const ubscribersResponseJson = await subscribersResponse.json();
+    const subscribersResponseJson = await subscribersResponse.json();
     const inscritos = subscribersResponseJson.total_subscribers;
 
     response.setHeader('Cache-Control', 's-maxage=15, stale-while-revalidate');
